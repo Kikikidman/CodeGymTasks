@@ -15,21 +15,17 @@ public class Solution {
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
         String a1 = bufferedReader.readLine();
-
         int b = Integer.parseInt(a1);
 
         if (b > 0) {
             b = b * 2;
             System.out.println(b);
-        }
-        else if (b < 0) {
+        } else if (b < 0) {
             b = b + 1;
             System.out.println(b);
-        }
-        else  {
+        } else {
             System.out.println(b);
         }
-        }
-
     }
+}
 
