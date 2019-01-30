@@ -5,9 +5,9 @@ Seasons on Terra
 
 */
 
-public class Solution {
+public class Solutionn {
     public static void main(String[] args) {
-        checkSeason(12);
+        checkSeason(-12);
         checkSeason(4);
         checkSeason(7);
         checkSeason(10);
