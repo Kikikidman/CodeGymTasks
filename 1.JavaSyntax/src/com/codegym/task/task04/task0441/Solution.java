@@ -1,12 +1,11 @@
-package com.codegym.task.task04.task0418;
+package com.codegym.task.task04.task0441;
+
 
 /* 
-Minimum of two numbers
+Somehow average
 
 */
-
 import java.io.*;
-
 import java.util.Scanner;
 
 public class Solution {
@@ -14,8 +13,11 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        System.out.println(Math.min(a, b));
+        int c = scanner.nextInt();
 
-
+        int max = Math.max(Math.max(a,b), c);
+        int min = Math.min(Math.min(a,b), c);
+        int mid = a + b + c - (min + max);
+        System.out.print(mid);
     }
 }
