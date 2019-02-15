@@ -18,7 +18,7 @@ public class Solution {
 
     public static int[] initializeArray() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int[] arr = new int[10];
+        int[] arr = new int[20];
         for (int i = 0; i < arr.length; i++){
             arr[i] = Integer.parseInt(reader.readLine());
         }
