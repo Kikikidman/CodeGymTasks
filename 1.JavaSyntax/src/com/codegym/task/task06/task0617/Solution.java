@@ -9,6 +9,15 @@ public class Solution {
     public static void main(String[] args) {
         printIdea(new Idea());
     }
+    public static void printIdea(Idea idea){
 
-    //write your code here
+        System.out.print(idea.getDescription());
+    }
+    public static class Idea {
+
+        public String getDescription(){
+           String a = "idea";
+            return a;
+        }
+    }
 }
