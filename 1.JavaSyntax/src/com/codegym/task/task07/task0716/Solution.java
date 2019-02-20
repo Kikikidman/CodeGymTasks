@@ -24,18 +24,18 @@ public class Solution {
     public static ArrayList<String> fix(ArrayList<String> list) {
         ArrayList<String> copy = new ArrayList<String>();
         String remove = "r";
-        String dupl = "l";
+        String duplicate = "l";
 
         for (int i = 0; i < list.size(); i++){
 
-            if(list.get(i).contains(dupl) && !list.get(i).contains(remove)) {
+            if(list.get(i).contains(duplicate) && !list.get(i).contains(remove)) {
                 copy.add(list.get(i));
                 copy.add(list.get(i));
             }
-            if(list.get(i).contains(remove) && list.get(i).contains(dupl)){
+            if(list.get(i).contains(remove) && list.get(i).contains(duplicate)){
                 copy.add(list.get(i));
             }
-            if(!list.get(i).contains(remove) && !list.get(i).contains(dupl)){
+            if(!list.get(i).contains(remove) && !list.get(i).contains(duplicate)){
                 copy.add(list.get(i));
             }
         }
