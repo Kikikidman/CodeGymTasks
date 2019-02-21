@@ -23,9 +23,11 @@ public class Solution {
         int max = list[0];
         int min = list[0];
         for(int i = 0; i < list.length; i++){
+
             if(list[i] > max){
                 max = list[i];
-            } if(list[i] < min){
+            }
+            if(list[i] < min){
                 min = list[i];
             }
         }
