@@ -18,12 +18,17 @@ public class Solution {
         for (Map.Entry<String, Cat> pair : map.entrySet()) {
             System.out.println(pair.getKey() + " - " + pair.getValue());
         }
+//
+//        map.forEach((s, cat) -> System.out.println(s + " - " + cat));
     }
 
 
     public static HashMap<String, Cat> addCatsToMap(String[] cats) {
-        //write your code here
-
+        HashMap<String, Cat> list = new HashMap<String, Cat>();
+        for(int i = 0; i < cats.length; i++){
+            list.put(cats[i], new Cat(cats[i]));
+        }
+        return list;
     }
 
 
