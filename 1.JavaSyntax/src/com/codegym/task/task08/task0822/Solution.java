@@ -3,9 +3,7 @@ package com.codegym.task.task08.task0822;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /* 
 Minimum of N numbers
@@ -19,12 +17,20 @@ public class Solution {
     }
 
     public static int getMinimum(List<Integer> array) {
-        // Find the minimum here
-        return 0;
+
+        return Collections.min(array);
     }
 
     public static List<Integer> getIntegerList() throws IOException {
-        // Create and initialize a list here
-        return null;
+        ArrayList<Integer> list = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+
+        for(int i = 0; i < a; i++){
+            int b = scanner.nextInt();
+            list.add(b);
+        }
+
+        return list;
     }
 }
