@@ -28,7 +28,25 @@ public class Solution {
     }
 
     public static void sort(String[] array) {
-        // write your code here
+        for(int i = 0; i < array.length; i++){
+            for(int j = i + 1; j < array.length; j++){
+                if(isNumber(array[i]) && isNumber(array[j])){
+                int a = Integer.parseInt(array[i]);
+                int b = Integer.parseInt(array[j]);
+                if(a < b){
+                    String temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+                }if(!isNumber(array[i]) && !isNumber(array[j])){
+                    if(isGreaterThan(array[i], array[j])){
+                        String temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+            }
+        }
     }
 
     // String comparison method: 'a' is greater than 'b'
